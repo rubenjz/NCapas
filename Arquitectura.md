@@ -1,3 +1,8 @@
+Ejecución con Docker:
+![alt text](image.png)
+![alt text](pan.jpeg)
+![alt text](Pan2.jpeg)
+
 # Arquitectura del Sistema de Eventos Deportivos
 
 ## Índice

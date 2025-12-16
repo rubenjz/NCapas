@@ -1,6 +1,12 @@
 from django.contrib import admin
-from .models import Deporte, Evento, Participante, EventoParticipante
+from .models import Deporte, Evento, Participante, EventoParticipante, Equipo
 
+@admin.register(Equipo)
+class EquipoAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nombre', 'deporte', 'ciudad', 'fecha_fundacion', 'fecha_creacion')
+    list_filter = ('deporte', 'ciudad', 'fecha_creacion')
+    search_fields = ('nombre', 'ciudad')
+    ordering = ('nombre',)
 
 @admin.register(Deporte)
 class DeporteAdmin(admin.ModelAdmin):

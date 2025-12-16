@@ -17,6 +17,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="equiposDropdown" role="button" data-bs-toggle="dropdown">
+                            Equipos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'eventos:lista_equipos' %}">Listar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'eventos:crear_equipo' %}">Crear</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'eventos:home' %}">Inicio</a>
                     </li>
